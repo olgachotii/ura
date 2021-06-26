@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My resume</title>
+    <!--для того чтоб подключить стили к странице, в head нужно добавить <link> 
+      где rel= это стиль а href= cсылка на наш стиль-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--main container-->
+    <div class="wrapper">
+      <aside class="sidebar">
+        <img class="my-photo" src="./Img/ss.jpg" alt="my photo" />
+
+        <!--Contacts conteiner-->
+        <div class="main-conteiner">
+          <div class="contact-conteiner">
+            <h3 class="contact-title">Contacts</h3>
+
+            <!-- Привязка номера к ссылке a href= ссылка,  приставка tel:дальше номер или текст ссылки, 
+            в данном примере при нажатии на телефон  всплывает окно набора номера -->
+
+            <div>
+              <span class="contact-link-type">C:</span> C:<a
+                class="contact-link"
+                href="tel:380951138598"
+              >
+                +380 095 136 33 14</a
+              >
+            </div>
+
+            <!--привязка почты к переходу на неё, приставка mailto:-->
+
+            <div>
+              <span class="contact-link-type">E:</span>
+              <a class="contact-link" href="mailto:chotiy19@gmail.com">chotiy19@gmail.com</a>
+            </div>
+          </div>
+
+          <!--Tech Skills conteiner-->
+
+          <div class="tech-skill-conteiner">
+            <h3 class="tech-skill-title">Навыки</h3>
+            <!-- при добавлении елемента class= имя элемента по классу
+            ( можно добавить цвет для этого элемента при вставки имени в css разделе)  можно-->
+            <ul>
+              <li class="tech-skill-item">
+                <span class="tech-skills-text">знаю что такое кабель</span>
+              </li>
+              <li class="tech-skill-item">
+                <span class="tech-skills-text">люблю вкусно покушать</span>
+              </li>
+              <li class="tech-skill-item"><span class="tech-skills-text">могу копать</span></li>
+              <li class="tech-skill-item"><span class="tech-skills-text">могу не копать</span></li>
+              <li class="tech-skill-item">
+                <span class="tech-skills-text">Обожаю ездить на убитой 10-ки</span>
+              </li>
+              
+            </ul>
+          </div>
+
+          <!-- <ol> - список, тег <li>- не нумерованный1 список-->
+          <div class="soft-skills-conteiner">
+            <h3 class="soft-scills-tetle">Умения</h3>
+
+            <ul>
+              <li class="soft-scills-item"><span class="soft-scills-text">Различаю цвета</span></li>
+              <li class="soft-scills-item">
+                <span class="soft-scills-text">Могу постоянно кивать</span>
+              </li>
+              <li class="soft-scills-item">
+                <span class="soft-scills-text">хорошо пережёвую пищу</span>
+              </li>
+              <li class="soft-scills-item"><span class="soft-scills-text">Не храплю</span></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!--about me container-->
+      <div class="abuot-me-konteiner">
+        <!--about me main info-->
+        <div class="info-conteiner">
+          <h2 class="profecion">Front-End Developer</h2>
+          <h1 class="name">Юрий Чоткий</h1>
+
+          <p class="description">
+            Всем пис, я Чоткий парень, могу делать всякое по мелочи.В основном люблю работать лёжа
+            перед телевизором или сидя возле компа.
+          </p>
+        </div>
+        <div class="project-conteiner">
+          <!--project conteiner-->
+
+          <h3 class="abuot-me-title">О себе</h3>
+
+          <!--нумерация и добавление ссылок под строку-->
+          <ol>
+            <li class="projects-title">
+              <a class="procjects-link" href="https://pastenow.ru/dbeb1739d03da8743ccc10db219114d5/"
+                >Работаю только на лекарства</a
+              >
+              <span class="dots">.....................</span>
+              <span><b>[</b> <span class="tech-name"> Фото 1 </span><b>]</b></span>
+            </li>
+            <li class="projects-title">
+              <a class="procjects-link" href="https://pastenow.ru/d4b30e1d8c46c47debcd38db5f15d125">
+                Не жалея ног</a
+              >
+              <span class="dots">....................</span>
+              <span><b>[</b> <span class="tech-name">Фото 2</span> <b>]</b></span>
+            </li>
+            <li class="projects-item">
+              <a class="procjects-link" href="https://pastenow.ru/aedd54659bb43937fed77d313543a587">
+                Не пью</a
+              >
+              <span class="dots">....................</span>
+              <span><b>[</b> <span class="tech-name">Фото 3 </span><b>]</b></span>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <!--work experience-->
+          <h3 class="abuot-me-title">Опыт работы</h3>
+
+          <!--company 1 -->
+          <div>
+            <h4 class="profession-title">
+              Работал там сям ..........<span class="profession-compani">
+                С начала охранял немного</span
+              >
+            </h4>
+
+            <span class="profession-time"
+              >September 2001 - где-то так <span class="profession-divaider">| </span> в
+              Ukraine</span
+            >
+
+            <ul class="profession-duties">
+              <li class="profession-duties-item">Спрашивал вы куда? Вы к комму?</li>
+              <li class="profession-duties-item">Мастер по разгадыванию кросвордов</li>
+
+              <li class="profession-duties-item">Научился спать сидя.</li>
+            </ul>
+          </div>
+
+          <!--company 2 -->
+          <div>
+            <h4 class="profession-title">
+              Типа электрик <span class="profession-compani"> Работа в Крыму</span>
+            </h4>
+
+            <span class="profession-time"
+              >March 2014 - October 2018 <span class="profession-divaider">|</span> в Ukraine</span
+            >
+
+            <ul class="profession-duties">
+              <li class="profession-duties-item">Чуток копал траншеи.</li>
+              <li class="profession-duties-item">Научился менять лампочки.</li>
+              <li class="profession-duties-item">Отдыхал.</li>
+            </ul>
+          </div>
+
+          <!--company 3-->
+          <div>
+            <h4 class="profession-title">
+              Электронник <samp class="profession-compani">Работа на 2-х метрового дядю</samp>
+            </h4>
+
+            <span class="profession-time"
+              >June 2019 - February 2021 <span class="profession-divaider">|</span> Ukraine</span
+            >
+
+            <ul class="profession-duties">
+              <li class="profession-duties-item">Понял , что в основном, я ничего не умею.</li>
+              <li class="profession-duties-item">В основном дебил.</li>
+              <li class="profession-duties-item">Зарабатываю, сколько дадут.</li>
+            </ul>
+          </div>
+
+          <!--Education -->
+          <div>
+            <h2 class="abuot-me-title">Образование</h2>
+
+            <h3 class="profession-compani">Самомучка</h3>
+
+            <h4 class="profession-title"></h4>
+
+            <span class="profession-time"
+              >Septermber 2007 - June 2014/" <span class="profession-divaider">|</span> в
+              Ukraine</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button">Отправить</button>
+  </body>
+</html>
